@@ -556,7 +556,7 @@ var TesseractWorker = function () {
 
 			return this._delay(function (job) {
 				if (typeof options === 'string') options = { lang: options };
-				options.lang = options.lang || 'eng';
+				options.lang = options.lang || 'deu';
 
 				job._send('recognize', { image: image, options: options, workerOptions: _this.workerOptions });
 			});
